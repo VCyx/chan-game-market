@@ -1,4 +1,4 @@
-import {Suit} from "@/models/suit";
+import { Suit } from "@/models/suit";
 
 export type CardType = {
     name: string;
@@ -10,7 +10,7 @@ export type CardType = {
         description: string,
         mechanic: any
     };
-    character?: string[];
+    character: string[];
 }
 
 export type CardStats = {
