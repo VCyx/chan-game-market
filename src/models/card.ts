@@ -5,7 +5,11 @@ export type CardType = {
     image: string;
     suit: Suit;
     stats: CardStats;
-    skill: any;
+    skill: {
+        type: SkillType,
+        description: string,
+        mechanic: any
+    };
     character?: string[];
 }
 
@@ -14,4 +18,9 @@ export type CardStats = {
     attack: number;
     hp: number;
     attackRange: number;
+}
+
+export enum SkillType  {
+    ACTIVE= "ACTIVE",
+    PASSIVE = "PASSIVE"
 }
