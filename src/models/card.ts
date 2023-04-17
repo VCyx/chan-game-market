@@ -1,8 +1,9 @@
 import { Suit } from "@/models/suit";
+import { StaticImageData } from "next/image";
 
 export type CardType = {
   name: string;
-  image: string;
+  image: string | StaticImageData;
   suit: Suit;
   stats: CardStats;
   skill: any;
