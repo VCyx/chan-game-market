@@ -4,10 +4,10 @@ import spadesImg from "../assets/suit/spades.svg";
 import clubsImg from "../assets/suit/clubs.svg";
 
 export enum Suit {
-  HEARTS,
-  DIAMONDS,
-  SPADES,
-  CLUBS,
+    HEARTS ="HEARTS",
+    DIAMONDS = "DIAMONDS",
+    SPADES = "SPADES",
+    CLUBS = "CLUBS"
 }
 
 export const SuitIcon: { [key in Suit]: string } = {
